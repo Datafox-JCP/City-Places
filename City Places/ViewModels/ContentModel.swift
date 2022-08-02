@@ -12,6 +12,9 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     var locationManager = CLLocationManager()
     
+    @Published var restaurants = [Business]()
+    @Published var sights = [Business]()
+    
     override init() {
             // init method of NSObject
         super.init()
@@ -42,8 +45,8 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
                 // Stop requesting the location after we got it once
             locationManager.stopUpdatingLocation()
                 // If we have the coordinates of the user, send into Yelp API
-            getBusinesses(category: "arts", location: userLocation!)
-                // getBusinesses(category: "restaurants", location: userLocation!)
+            getBusinesses(category: Constants.sightsKey, location: userLocation!)
+            getBusinesses(category: Constants.restaurantKey, location: userLocation!)
         }
     }
     
@@ -82,14 +85,21 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
                         // Create json decoder
                     let decoder = JSONDecoder()
                         // Decode
-                    //let modules = try decoder.decode([Module].self, from: data!)
-                    
+                    let result = try decoder.decode(BusinessSearch.self, from: data!)
+                    print(result)
                     DispatchQueue.main.async {
-                            // Append parsed modules into modules property
-                        //self.modules += modules
+                        // Assign results to the appropiate property
+                        switch category {
+                        case Constants.sightsKey:
+                            self.sights = result.businesses
+                        case Constants.restaurantKey:
+                            self.restaurants = result.businesses
+                        default:
+                            break
+                        }
                     }
                 } catch {
-                    // Couldn't parse the json
+                    print(error)
                 }
             }
                 // Kick off data task

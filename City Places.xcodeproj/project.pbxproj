@@ -13,6 +13,8 @@
 		C691DC5D2899973F00DACC93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C691DC5C2899973F00DACC93 /* Preview Assets.xcassets */; };
 		C691DC6728999A0600DACC93 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC6628999A0600DACC93 /* ContentModel.swift */; };
 		C691DC6A2899B00000DACC93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC692899B00000DACC93 /* Constants.swift */; };
+		C691DC6C2899B9C000DACC93 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC6B2899B9C000DACC93 /* Business.swift */; };
+		C691DC6E2899BB9F00DACC93 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC6D2899BB9F00DACC93 /* BusinessSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		C691DC5C2899973F00DACC93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C691DC6628999A0600DACC93 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		C691DC692899B00000DACC93 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C691DC6B2899B9C000DACC93 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		C691DC6D2899BB9F00DACC93 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		C691DC632899975300DACC93 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C691DC6B2899B9C000DACC93 /* Business.swift */,
+				C691DC6D2899BB9F00DACC93 /* BusinessSearch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 				C691DC582899973B00DACC93 /* ContentView.swift in Sources */,
 				C691DC562899973B00DACC93 /* City_PlacesApp.swift in Sources */,
 				C691DC6728999A0600DACC93 /* ContentModel.swift in Sources */,
+				C691DC6C2899B9C000DACC93 /* Business.swift in Sources */,
 				C691DC6A2899B00000DACC93 /* Constants.swift in Sources */,
+				C691DC6E2899BB9F00DACC93 /* BusinessSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
