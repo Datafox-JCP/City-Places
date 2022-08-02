@@ -12,6 +12,7 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     var locationManager = CLLocationManager()
     
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
     
@@ -28,6 +29,9 @@ class ContentModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
         // MARK: - Location manager delegate methods
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        // Update the authorizationsState property
+        self.authorizationState = locationManager.authorizationStatus
+        
         if locationManager.authorizationStatus == .authorizedAlways || locationManager.authorizationStatus == .authorizedWhenInUse {
                 // We have permission, start geolocating the user
             locationManager.startUpdatingLocation()

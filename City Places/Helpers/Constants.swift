@@ -8,7 +8,7 @@
 import Foundation
 
 struct Constants {
-    static var apiKey = "Your key here"
+    static var apiKey = "Insert your key"
     static var apiUrl = "https://api.yelp.com/v3/businesses/search"
     static var restaurantKey = "restaurants"
     static var sightsKey = "arts"
