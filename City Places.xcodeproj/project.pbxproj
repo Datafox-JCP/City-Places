@@ -19,6 +19,7 @@
 		C691DC762899E47400DACC93 /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC752899E47400DACC93 /* BusinessList.swift */; };
 		C691DC782899E7F200DACC93 /* BusineessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC772899E7F100DACC93 /* BusineessSectionHeader.swift */; };
 		C691DC7A2899E94C00DACC93 /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC792899E94C00DACC93 /* BusinessSection.swift */; };
+		C691DC7C2899FC8000DACC93 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C691DC7B2899FC8000DACC93 /* BusinessRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		C691DC752899E47400DACC93 /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
 		C691DC772899E7F100DACC93 /* BusineessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusineessSectionHeader.swift; sourceTree = "<group>"; };
 		C691DC792899E94C00DACC93 /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		C691DC7B2899FC8000DACC93 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				C691DC752899E47400DACC93 /* BusinessList.swift */,
 				C691DC772899E7F100DACC93 /* BusineessSectionHeader.swift */,
 				C691DC792899E94C00DACC93 /* BusinessSection.swift */,
+				C691DC7B2899FC8000DACC93 /* BusinessRow.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C691DC582899973B00DACC93 /* LaunchView.swift in Sources */,
+				C691DC7C2899FC8000DACC93 /* BusinessRow.swift in Sources */,
 				C691DC732899C43300DACC93 /* HomeView.swift in Sources */,
 				C691DC562899973B00DACC93 /* City_PlacesApp.swift in Sources */,
 				C691DC6728999A0600DACC93 /* ContentModel.swift in Sources */,
